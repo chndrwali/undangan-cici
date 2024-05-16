@@ -1,13 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import ModalVisible from '@/components/ui/Modal';
+import MusicButton from '@/components/ui/music-btn';
 
 const HomePage = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [isModalVisible, setModalVisible] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlayPause = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   const handleCloseModal = () => {
     setModalVisible(false);
+    togglePlayPause();
   };
   return (
     <main className="flex items-center justify-center h-screen bg-gray-200">
@@ -25,6 +40,7 @@ const HomePage = () => {
           </div>
         </div>
       )}
+      <MusicButton audioRef={audioRef} isPlaying={isPlaying} togglePlayPause={togglePlayPause} />
     </main>
   );
 };
