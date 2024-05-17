@@ -25,7 +25,7 @@ const DoaUcapan = () => {
         </div>
       </div>
       <div className="bg-black rounded-xl p-8">
-        <div className="relative z-10 w-full max-w-xl sm:max-w-3xl bg-white p-8 rounded-xl shadow-lg">
+        <div className="relative z-10 w-full max-w-lg sm:max-w-3xl bg-white p-4 rounded-xl shadow-lg">
           <form className="mb-8">
             <div className="mb-4">
               <input type="text" placeholder="Nama Anda" className="w-full p-3 border border-gray-300 rounded-lg" />
