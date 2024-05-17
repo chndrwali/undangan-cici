@@ -2,8 +2,27 @@ import Image from 'next/image';
 
 const Gallery = () => {
   const images = ['/bg/1.webp', '/bg/2.webp', '/bg/3.webp', '/bg/4.webp'];
-  const images2 = ['/bg/1.webp', '/bg/2.webp', '/bg/3.webp'];
-  const images3 = ['/bg/1.webp', '/bg/2.webp', '/bg/3.webp', '/bg/4.webp', '/bg/5.webp'];
+  const images2 = ['/bg/5.webp', '/bg/22.jpeg', '/bg/7.jpeg'];
+  const images3 = [
+    '/bg/8.jpeg',
+    '/bg/12.jpeg',
+    '/bg/10.jpeg',
+    '/bg/25.jpeg',
+    '/bg/13.jpeg',
+    '/bg/14.jpeg',
+    '/bg/15.jpeg',
+    '/bg/16.jpeg',
+    '/bg/17.jpeg',
+    '/bg/18.jpeg',
+    '/bg/19.jpeg',
+    '/bg/20.jpeg',
+    '/bg/24.jpeg',
+    '/bg/26.jpeg',
+    '/bg/27.jpeg',
+    '/bg/bg.png',
+    '/bg/29.jpeg',
+    '/bg/30.jpeg',
+  ];
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white text-center py-12">
       <div className="max-w-xl sm:max-w-4xl">

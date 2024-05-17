@@ -5,7 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import { motion } from 'framer-motion';
 
 const PageSlide = () => {
-  const images = ['/bg/8.jpeg', '/bg/11.jpeg', '/bg/30.jpeg', '/bg/24.jpeg', '/bg/29.jpeg'];
+  const images = ['/bg/8.jpeg', '/bg/27.jpeg', '/bg/30.jpeg', '/bg/26.jpeg', '/bg/12.jpeg'];
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },

@@ -23,7 +23,7 @@ const Gift: React.FC = () => {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                <DialogTitle>Dompet Digital</DialogTitle>
                 <DialogDescription>This action cannot be undone. This will permanently delete your account and remove your data from our servers.</DialogDescription>
               </DialogHeader>
             </DialogContent>
@@ -35,8 +35,8 @@ const Gift: React.FC = () => {
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Test</DialogTitle>
-                <DialogDescription>This action cannot be undone. This will permanently delete your account and remove your data from our servers.</DialogDescription>
+                <DialogTitle>Kirim kado ke Alamat</DialogTitle>
+                <DialogDescription>This action cannot be undone. </DialogDescription>
               </DialogHeader>
             </DialogContent>
           </Dialog>
