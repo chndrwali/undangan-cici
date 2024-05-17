@@ -1,4 +1,7 @@
+'use client';
+
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 
 const DoaUcapan = () => {
@@ -24,9 +27,9 @@ const DoaUcapan = () => {
   ];
 
   return (
-    <div id="rsvp" className="relative flex flex-col items-center justify-center min-h-screen bg-gray-100 py-12">
+    <div id="rsvp" className="relative flex flex-col items-center justify-center min-h-screen bg-gray-100 py-12 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100 opacity-90"></div>
-      <div className="relative z-10 text-center mb-12">
+      <motion.div className="relative z-10 text-center mb-12" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <h1 className="text-xl font-bold">
           Doa & Ucapan untuk <br />
           <span className="text-4xl font-black">Pasangan Mempelai</span>
@@ -34,8 +37,8 @@ const DoaUcapan = () => {
         <div className="max-w-xl">
           <p className="mt-4 text-lg text-gray-700">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir, untuk memberikan doa restu kepada kedua mempelai.</p>
         </div>
-      </div>
-      <div className="bg-black rounded-xl p-8">
+      </motion.div>
+      <motion.div className="bg-black rounded-xl p-8" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <div className="relative z-10 w-full max-w-lg sm:max-w-3xl bg-white p-4 rounded-xl shadow-lg">
           <form onSubmit={sendMessageToWhatsapp} className="mb-8">
             <div className="mb-4">
@@ -55,16 +58,16 @@ const DoaUcapan = () => {
               Kirim
             </Button>
           </form>
-          <div className="space-y-6">
+          <motion.div className="space-y-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ staggerChildren: 0.1 }}>
             {comments.map((comment, index) => (
-              <div key={index} className="p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm">
+              <motion.div key={index} className="p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm" whileHover={{ scale: 1.05 }}>
                 <h2 className="text-lg font-bold text-gray-900">{comment.name}</h2>
                 <p className="text-gray-700">{comment.message}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -72,6 +72,7 @@ const config = {
         kertas: 'url(/bg/kertas.jpg)',
         countdown: 'url(/bg/27.jpeg)',
         quotes: 'url(/bg/quotes.png)',
+        atm: 'url(/bg/atm.png)',
       },
     },
   },

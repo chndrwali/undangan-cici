@@ -5,8 +5,7 @@ import { motion } from 'framer-motion';
 
 const Quotes = () => {
   return (
-    <div className="relative grid grid-cols-1 sm:grid-cols-2 items-center justify-center min-h-screen bg-quotes bg-cover bg-center text-white overflow-hidden">
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.5 }} className="absolute inset-0 bg-black opacity-50"></motion.div>
+    <div className="relative grid grid-cols-1 sm:grid-cols-2 items-center justify-center min-h-screen bg-kertas bg-cover bg-no-repeat text-black overflow-hidden">
       <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }} viewport={{ once: false, amount: 0.5 }} className="flex justify-center">
         <div className="relative z-10 rounded-tr-full rounded-tl-full h-[25rem] shadow-2xl">
           <Image src="/bg/6.png" alt="Wedding Couple" width={300} height={400} className="object-fit rounded-tr-full rounded-tl-full p-2 " />

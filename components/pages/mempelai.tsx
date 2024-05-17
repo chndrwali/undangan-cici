@@ -64,7 +64,7 @@ const Mempelai = () => {
               <h2 className="text-xl font-semibold mt-4">Cici Febrianti</h2>
               <Separator className="my-2 max-w-[100px]" />
               <p className="text-gray-500 text-xs">Putri Kedua</p>
-              <p className="text-gray-500 text-xs">Bpk. Desi Suryana & Ibu Ratinah</p>
+              <p className="text-gray-500 text-xs">Bpk. Dedi Suryana & Ibu Ratinah</p>
               <Link href="https://www.instagram.com/febiaaaaa" target="_blank" className="mt-2">
                 <Instagram size={15} />
               </Link>
