@@ -6,7 +6,7 @@ const Gallery = () => {
   const images3 = ['/bg/1.webp', '/bg/2.webp', '/bg/3.webp', '/bg/4.webp', '/bg/5.webp'];
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white text-center py-12">
-      <div className="max-w-4xl">
+      <div className="max-w-xl sm:max-w-4xl p-4">
         <div className="flex flex-col items-center">
           <h1 className="text-xl font-bold mb-8">
             Momen <br />
