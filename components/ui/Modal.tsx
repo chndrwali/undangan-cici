@@ -49,7 +49,7 @@ const ModalVisible: React.FC<ModalVisibleProps> = ({ isVisible, onClose }) => {
           </p>
         </motion.div>
         <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }}>
-          <Button onClick={onClose} className="text-black bg-white hover:bg-transparent hover:text-white border hover:border-blue-500">
+          <Button onClick={onClose} className="text-black rounded-full bg-white hover:bg-transparent hover:text-white border hover:border-blue-500">
             Buka Undangan
           </Button>
         </motion.div>

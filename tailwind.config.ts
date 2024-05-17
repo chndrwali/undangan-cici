@@ -69,6 +69,7 @@ const config = {
       },
       backgroundImage: {
         home: 'url(/bg/bg.png)',
+        kertas: 'url(/bg/kertas.jpg)',
       },
     },
   },
