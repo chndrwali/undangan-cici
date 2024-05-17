@@ -20,7 +20,7 @@ const AkadResepsi = () => {
         <p className="mt-4 text-sm">W.S. Rendra</p>
       </div>
 
-      <div className="flex space-x-8">
+      <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-0 sm:space-x-8">
         <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center flex flex-col items-center">
           <div className="w-full  border border-gray-200 shadow-lg rounded-lg overflow-hidden">
             <Image src="/bg/4.webp" alt="Akad" width={300} height={300} className="rounded-lg p-3 object-cover w-full h-[10rem]" />

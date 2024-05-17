@@ -1,6 +1,7 @@
 'use client';
 
 import { ImagesSlider } from '../ui/image-slider';
+import { Separator } from '../ui/separator';
 
 const PageSlide = () => {
   const images = ['/bg/1.webp', '/bg/2.webp', '/bg/3.webp', '/bg/4.webp', '/bg/5.webp'];
@@ -9,14 +10,16 @@ const PageSlide = () => {
       <div className="absolute w-full top-[70%] flex flex-col items-center  text-center z-50 text-white ">
         {' '}
         <h1>PERNIKAHAN</h1>
-        <div>
-          <span>Ari Agiana</span>
+        <div className="text-xl sm:text-3xl space-x-2">
+          <span>Ari</span>
           <span>&</span>
-          <span>Cici Febrianti</span>
+          <span>Cici</span>
         </div>
-        <div>
-          <span>Sabtu</span>
-          <span>28. Juni. 2024</span>
+        <Separator className="max-w-[10rem] bg-white mt-4" />
+        <div className="text-sm sm:text-2xl space-x-2">
+          <span>22.</span>
+          <span>Juni.</span>
+          <span>2024</span>
         </div>{' '}
       </div>
     </ImagesSlider>
