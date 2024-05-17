@@ -20,8 +20,8 @@ const Mempelai = () => {
               <h2 className="text-xl font-semibold mt-4">Ari Agiana</h2>
               <Separator className="my-2 max-w-[100px]" />
               <p className="text-gray-500 text-xs">Putra Kedua</p>
-              <p className="text-gray-500 text-xs">Bpk. Agus Kusnadi & Ibu Nonong Desi </p>
-              <Link href="/" target="_blank" className="mt-2">
+              <p className="text-gray-500 text-xs">Bpk. Asep Kusnadi & Ibu Noneng Dewi </p>
+              <Link href="https://www.instagram.com/ariagiana" target="_blank" className="mt-2">
                 <Instagram size={15} />
               </Link>
             </div>
@@ -38,8 +38,8 @@ const Mempelai = () => {
               <h2 className="text-xl font-semibold mt-4">Cici Febrianti</h2>
               <Separator className="my-2 max-w-[100px]" />
               <p className="text-gray-500 text-xs">Putri Kedua</p>
-              <p className="text-gray-500 text-xs">Bpk. Desi Suryana & Ibu Ratniti</p>
-              <Link href="/" target="_blank" className="mt-2">
+              <p className="text-gray-500 text-xs">Bpk. Desi Suryana & Ibu Ratinah</p>
+              <Link href="https://www.instagram.com/febiaaaaa" target="_blank" className="mt-2">
                 <Instagram size={15} />
               </Link>
             </div>

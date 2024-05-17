@@ -32,7 +32,7 @@ const AkadResepsi = () => {
 
           <p className="text-gray-600 mb-4">09.00 WIB - Selesai</p>
           <Separator className="max-w-[5rem]" />
-          <p className="text-gray-600 mb-4">Lapang Badminton (Agotax)</p>
+          <p className="text-gray-600 mb-4">Gedung Serbaguna Desa Ciwaruga</p>
           <p className="text-gray-600 mb-4">
             Jl. Setrasari Kulon 1<br />
             Sukarasa, Kec. Sukasari
@@ -56,7 +56,7 @@ const AkadResepsi = () => {
           <p className="text-xl font-semibold mb-2">Sabtu, 22 2024</p>
           <p className="text-gray-600 mb-4">11.00 WIB - Selesai</p>
           <Separator className="max-w-[5rem]" />
-          <p className="text-gray-600 mb-4">Lapang Badminton (Agotax)</p>
+          <p className="text-gray-600 mb-4">Gedung Serbaguna Desa Ciwaruga</p>
           <p className="text-gray-600 mb-4">
             Jl. Setrasari Kulon 1<br />
             Sukarasa, Kec. Sukasari
