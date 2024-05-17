@@ -30,7 +30,7 @@ const Mempelai = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
       <motion.div className="text-center max-w-6xl p-6 rounded-lg shadow-lg bg-kertas bg-no-repeat bg-cover" initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.5 }} variants={containerVariants}>
         <motion.h1 className="text-xl sm:text-2xl font-semibold mb-4" variants={itemVariants}>
           Pasangan <br /> <span className="text-3xl sm:text-5xl font-bold">Mempelai</span>

@@ -28,7 +28,7 @@ const PageSlide = () => {
 
   return (
     <ImagesSlider className="h-screen" images={images}>
-      <div className="absolute w-full top-[70%] flex flex-col items-center text-center z-50 text-white">
+      <div className="absolute w-full top-[70%] flex flex-col items-center text-center z-50 text-white overflow-hidden">
         <motion.div initial="hidden" whileInView="visible" variants={containerVariants} viewport={{ once: true }}>
           <motion.h1 variants={itemVariants}>PERNIKAHAN</motion.h1>
           <div className="text-xl sm:text-3xl space-x-2">

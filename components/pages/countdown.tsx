@@ -53,7 +53,7 @@ const Countdown = () => {
   };
 
   return (
-    <div className="relative inset-0 z-50 flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-countdown text-white">
+    <div className="relative inset-0 z-50 flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-countdown text-white overflow-hidden">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.5 }} className="absolute inset-0 bg-black opacity-40"></motion.div>
       <div className="relative z-10 flex flex-col items-center text-center">
         <motion.h1 initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.5 }} variants={containerVariants} className="text-xl font-bold mb-4">
