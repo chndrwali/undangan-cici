@@ -8,6 +8,10 @@ import Mempelai from '../pages/mempelai';
 import Countdown from '../pages/countdown';
 import Quotes from '../pages/quotes';
 import AkadResepsi from '../pages/akad-resepsi';
+import Gallery from '../pages/gallery';
+import DoaUcapan from '../pages/doa-ucapan';
+import QuoteSection from '../pages/quotes-rezeki';
+import Thanks from '../pages/thanks';
 
 const HomePage = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -40,6 +44,10 @@ const HomePage = () => {
           <Countdown />
           <Quotes />
           <AkadResepsi />
+          <Gallery />
+          <DoaUcapan />
+          <QuoteSection />
+          <Thanks />
           <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
             Buka Undangan
           </button>
