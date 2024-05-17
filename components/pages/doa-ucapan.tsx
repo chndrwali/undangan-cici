@@ -13,7 +13,7 @@ const DoaUcapan = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gray-100 py-12">
+    <div id="rsvp" className="relative flex flex-col items-center justify-center min-h-screen bg-gray-100 py-12">
       <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100 opacity-90"></div>
       <div className="relative z-10 text-center mb-12">
         <h1 className="text-xl font-bold">
