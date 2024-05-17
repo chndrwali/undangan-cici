@@ -13,6 +13,7 @@ import DoaUcapan from '../pages/doa-ucapan';
 import QuoteSection from '../pages/quotes-rezeki';
 import Thanks from '../pages/thanks';
 import ButtonRspv from '../ui/button-rsvp';
+import Gift from '../pages/gift';
 
 const HomePage = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -48,11 +49,12 @@ const HomePage = () => {
           <Gallery />
           <DoaUcapan />
           <QuoteSection />
+          <Gift />
           <Thanks />
           <ButtonRspv />
-          <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
+          {/* <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
             Buka Undangan
-          </button>
+          </button> */}
         </div>
       )}
       <MusicButton audioRef={audioRef} isPlaying={isPlaying} togglePlayPause={togglePlayPause} />
