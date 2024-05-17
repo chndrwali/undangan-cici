@@ -7,6 +7,7 @@ import PageSlide from '../pages/page-slide';
 import Mempelai from '../pages/mempelai';
 import Countdown from '../pages/countdown';
 import Quotes from '../pages/quotes';
+import AkadResepsi from '../pages/akad-resepsi';
 
 const HomePage = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -38,6 +39,7 @@ const HomePage = () => {
           <Mempelai />
           <Countdown />
           <Quotes />
+          <AkadResepsi />
           <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
             Buka Undangan
           </button>
