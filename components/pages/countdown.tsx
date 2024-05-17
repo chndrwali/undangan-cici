@@ -35,7 +35,7 @@ const Countdown = () => {
 
   return (
     <div className="relative inset-0 z-50 flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-countdown text-white">
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.5 }} className="absolute inset-0 bg-black opacity-50"></motion.div>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.5 }} className="absolute inset-0 bg-black opacity-40"></motion.div>
       <div className="relative z-10 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4">Hitung Mundur Hari Bahagia Kami</h1>
         <div className="flex space-x-4 text-center">
