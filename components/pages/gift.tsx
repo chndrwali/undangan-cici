@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCreditCard, FaGift } from 'react-icons/fa';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog';
 
 const Gift: React.FC = () => {
   return (
@@ -15,14 +16,30 @@ const Gift: React.FC = () => {
           kebahagiaan kami.
         </p>
         <div className="flex items-center justify-center space-x-4">
-          <button className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
-            <FaCreditCard />
-            <span>Cashless</span>
-          </button>
-          <button className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
-            <FaGift />
-            <span>Gift & Flower</span>
-          </button>
+          <Dialog>
+            <DialogTrigger className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+              <FaCreditCard />
+              <span>Cashless</span>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                <DialogDescription>This action cannot be undone. This will permanently delete your account and remove your data from our servers.</DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
+          <Dialog>
+            <DialogTrigger className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+              <FaGift />
+              <span>Gift & Flower</span>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Test</DialogTitle>
+                <DialogDescription>This action cannot be undone. This will permanently delete your account and remove your data from our servers.</DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>
