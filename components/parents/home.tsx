@@ -5,6 +5,7 @@ import ModalVisible from '@/components/ui/Modal';
 import MusicButton from '@/components/ui/music-btn';
 import PageSlide from '../pages/page-slide';
 import Mempelai from '../pages/mempelai';
+import Countdown from '../pages/countdown';
 
 const HomePage = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -34,6 +35,7 @@ const HomePage = () => {
         <div>
           <PageSlide />
           <Mempelai />
+          <Countdown />
           <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
             Buka Undangan
           </button>

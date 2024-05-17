@@ -70,6 +70,7 @@ const config = {
       backgroundImage: {
         home: 'url(/bg/bg.png)',
         kertas: 'url(/bg/kertas.jpg)',
+        countdown: 'url(/bg/countdown.png)',
       },
     },
   },
