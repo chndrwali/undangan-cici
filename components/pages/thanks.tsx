@@ -51,7 +51,14 @@ const Thanks: React.FC = () => {
           >
             <FaInstagram size={20} />
           </Link>
-          <Link href="" target="_blank" rel="noreferrer" title="whatsapp azhar digital" aria-label=" whatsapp azhar digital" className="mx-2 text-gray-50 hover:text-blue-500  transition duration-300">
+          <Link
+            href="https://wa.me/6289652648201?text=Halo, Saya ingin membuat web"
+            target="_blank"
+            rel="noreferrer"
+            title="whatsapp azhar digital"
+            aria-label=" whatsapp azhar digital"
+            className="mx-2 text-gray-50 hover:text-blue-500  transition duration-300"
+          >
             <FaWhatsapp size={20} />
           </Link>
         </div>
