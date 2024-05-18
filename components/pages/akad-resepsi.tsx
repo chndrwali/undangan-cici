@@ -91,7 +91,7 @@ const AkadResepsi = () => {
             <span className="font-bold text-2xl ">{count}</span>
             <span>2024</span>
           </p>
-          <p className="text-gray-600 mb-4">11.00 WIB - Selesai</p>
+          <p className="text-gray-600 mb-4">11.00 WIB - 14.30 WIB</p>
           <Separator className="max-w-[5rem] mb-4" />
           <div>
             <MapPin size={25} />
