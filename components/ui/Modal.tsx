@@ -35,7 +35,7 @@ const ModalVisible: React.FC<ModalVisibleProps> = ({ isVisible, onClose }) => {
             <span className={`${GV.className} text-2xl md:text-3xl font-bold italic`}>Ari Agiana</span>
             <div className="absolute left-0 right-0 -bottom-2 border-t-2 border-white"></div>
           </motion.div>
-          <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className="text-2xl md:text-3xl font-bold italic">
+          <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className={`${GV.className} text-2xl md:text-3xl font-bold italic`}>
             &
           </motion.div>
           <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.8, duration: 0.5 }} className="relative flex-shrink-0 bg-white text-primary p-2 rounded-sm">
