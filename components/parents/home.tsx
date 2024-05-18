@@ -52,9 +52,6 @@ const HomePage = () => {
           <Gift />
           <Thanks />
           <ButtonRspv />
-          {/* <button onClick={() => setModalVisible(true)} className="px-6 py-3 bg-blue-600 text-white rounded-lg">
-            Buka Undangan
-          </button> */}
         </div>
       )}
       <MusicButton audioRef={audioRef} isPlaying={isPlaying} togglePlayPause={togglePlayPause} />

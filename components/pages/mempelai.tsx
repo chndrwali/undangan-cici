@@ -1,13 +1,21 @@
 'use client';
 
 import Image from 'next/image';
-import { Lora } from 'next/font/google';
+import { Lora, Playfair_Display } from 'next/font/google';
 import Link from 'next/link';
 import { Instagram } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { motion } from 'framer-motion';
 
-const lora = Lora({ subsets: ['latin'] });
+const lora = Lora({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const pf = Playfair_Display({
+  subsets: ['latin'],
+  weight: '400',
+});
 
 const Mempelai = () => {
   const containerVariants = {
@@ -53,7 +61,7 @@ const Mempelai = () => {
               <Image src="/bg/5.webp" alt="Ari Agiana" width={300} height={300} className="w-full h-full object-cover" />
             </div>
           </motion.div>
-          <motion.div className="flex items-center text-3xl font-semibold mx-4" variants={itemVariants}>
+          <motion.div className={`${pf.className} flex items-center text-5xl font-semibold mx-4`} variants={itemVariants}>
             &
           </motion.div>
           <motion.div className="grid grid-cols-2 items-center text-center" variants={itemVariants}>

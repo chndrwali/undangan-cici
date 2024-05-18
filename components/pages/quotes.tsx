@@ -25,8 +25,7 @@ const Quotes = () => {
         </div>
         <div className="relative z-10 p-8 bg-white bg-opacity-50 rounded-xl shadow-lg mt-4">
           <p className="text-center text-gray-800 italic">
-            Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh,
-            pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+            Hai para pemuda! barang siapa di antara kamu sudah mampu kawin, maka kawinlah, Karena dia itu dapat menundukkan pandangan dan menjaga kemaluan. Dan siapa yang belum mampu hendaklah dia berpuasa karena dapat menahan.
           </p>
         </div>
       </motion.div>

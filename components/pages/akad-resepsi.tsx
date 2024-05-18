@@ -2,22 +2,27 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import useCountUp from '@/lib/count';
 import { Separator } from '../ui/separator';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { MapPin, Navigation } from 'lucide-react';
+import useIntersectionObserver from '@/lib/hooks';
 
 const AkadResepsi = () => {
+  const [ref, isIntersecting] = useIntersectionObserver();
+  const count = useCountUp(22, 4, isIntersecting ? 'inView' : 'outOfView');
+
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 overflow-hidden">
+    <div ref={ref} className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 overflow-hidden">
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }} viewport={{ once: false, amount: 0.5 }} className="text-center mb-12">
         <h1 className="text-xl font-bold mb-2 space-y-0">
           Akad & Resepsi <br /> <span className="text-4xl font-bold">Pernikahan</span>
         </h1>
         <p className="italic text-xs">
-          {`"`}Cintaku kepadamu telah memaktu
+          {`"`}Cintaku kepadamu telah mewaktu
           <br />
-          Syair ini juga akan membuatku
+          Syair ini juga akan mewaktu
           <br />
           Yang jelas usianya akan lebih panjang dari usiaku dan usiamu.{`"`}
         </p>
@@ -44,13 +49,17 @@ const AkadResepsi = () => {
           <h2 className="text-2xl font-bold mb-2">Akad</h2>
           <Separator className="max-w-[5rem]" />
           <p className="text-gray-600 mb-4">Juni</p>
-          <p className="text-xl font-semibold mb-2">Sabtu, 22 2024</p>
+          <p className="text-xl mb-2 space-x-2">
+            <span>Sabtu,</span>
+            <span className="font-bold text-2xl ">{count}</span>
+            <span>2024</span>
+          </p>
           <p className="text-gray-600 mb-4">09.00 WIB - Selesai</p>
           <Separator className="max-w-[5rem] mb-4" />
           <div>
             <MapPin size={25} />
           </div>
-          <p className="text-gray-600 mb-4">GSG Desa Ciwaruga</p>
+          <p className="text-gray-600 font-bold mb-4">GSG Desa Ciwaruga</p>
           <p className="text-gray-600 mb-4">
             Ciwaruga, Kec. Parongpong,
             <br /> Kabupaten Bandung Barat,
@@ -77,13 +86,17 @@ const AkadResepsi = () => {
           <h2 className="text-2xl font-bold mb-2">Resepsi</h2>
           <Separator className="max-w-[5rem]" />
           <p className="text-gray-600 mb-4">Juni</p>
-          <p className="text-xl font-semibold mb-2">Sabtu, 22 2024</p>
+          <p className="text-xl mb-2 space-x-2">
+            <span>Sabtu,</span>
+            <span className="font-bold text-2xl ">{count}</span>
+            <span>2024</span>
+          </p>
           <p className="text-gray-600 mb-4">11.00 WIB - Selesai</p>
           <Separator className="max-w-[5rem] mb-4" />
           <div>
             <MapPin size={25} />
           </div>
-          <p className="text-gray-600 mb-4">GSG Desa Ciwaruga</p>
+          <p className="text-gray-600 mb-4 font-bold">GSG Desa Ciwaruga</p>
           <p className="text-gray-600 mb-4">
             Ciwaruga, Kec. Parongpong,
             <br /> Kabupaten Bandung Barat,

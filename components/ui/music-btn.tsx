@@ -15,7 +15,7 @@ const MusicButton: React.FC<Props> = ({ audioRef, isPlaying, togglePlayPause }) 
       <button onClick={togglePlayPause} className="flex items-center justify-center h-full w-full">
         {isPlaying ? <Music size={20} className="animate-spin" /> : <Pause size={20} className="line-through" />}
       </button>
-      <audio ref={audioRef} src="/nano.mp3" />
+      <audio ref={audioRef} src="/westlife.mp3" />
     </div>
   );
 };
