@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import moment from 'moment';
-import { Redressed } from 'next/font/google';
+import { Great_Vibes, Redressed } from 'next/font/google';
 import Link from 'next/link';
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6';
@@ -12,29 +12,29 @@ const redressed = Redressed({
   weight: '400',
 });
 
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  weight: '400',
+});
+
 const Thanks: React.FC = () => {
   return (
     <div className="relative inset-0 min-h-screen bg-home bg-cover bg-center text-white flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <motion.div className="relative z-10 flex flex-col items-center text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-        <h1 className="text-3xl font-bold mb-4">Kami Yang Berbahagia</h1>
-        <h2 className="text-2xl font-semibold mb-4">Ari & Cici</h2>
-        <p className="mb-4">Turut Mengundang:</p>
-        <ul className="list-none mb-4">
-          <li>- Bpk. Ade</li>
-          <li>- Bpk. Eman</li>
-          <li>- Bpk. Acin</li>
-          <li>- Kel. Bpk. Oto (Alm)</li>
-          <li>- Kel. Bpk. Emet (Alm)</li>
-          <li>- Kel. Ma Anah (Alm)</li>
-          <li>- Ma Anni</li>
-        </ul>
+      <motion.div className="relative z-10 flex flex-col items-center text-center mb-16" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <h1 className="text-2xl font-bold mb-4">
+          Kami Yang
+          <br />
+          <span className="text-4xl font-bold">Berbahagia</span>
+        </h1>
+        <h2 className={`${greatVibes.className} text-4xl font-semibold mb-4`}>Ari & Cici</h2>
+
         <div className="max-w-md sm:max-w-xl">
           <p className="text-sm">Tiada Yang Dapat Kami Ungkapkan Selain Rasa Terimakasih Dari Hati Yang Tulus Apabila Bapak/Ibu/Saudara/i Berkenan Hadir Untuk Memberikan Do{`'`}a Restu Kepada Kami</p>
         </div>
       </motion.div>
 
-      <footer className="relative z-10 text-white text-center w-full flex items-center justify-center flex-col">
+      <footer className="relative z-10 bottom-4 text-white text-center w-full flex items-center justify-center flex-col">
         <span className={`${redressed.className} font-bold text-2xl my-2`}>Azhar Digital</span>
         <p>Digital Wedding Invitation &copy; {moment().format('YYYY')}. All Rights Reserved </p>
         <div className="flex flex-row my-4">
