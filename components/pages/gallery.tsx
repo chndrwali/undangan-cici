@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Gallery = () => {
-  const images = ['/bg/1.webp', '/bg/8.jpeg', '/bg/12.jpeg', '/bg/10.jpeg'];
-  const images2 = ['/bg/5.webp', '/bg/22.jpeg', '/bg/7.jpeg'];
-  const images3 = ['/bg/25.jpeg', '/bg/13.jpeg', '/bg/14.jpeg', '/bg/15.jpeg', '/bg/16.jpeg', '/bg/18.jpeg', '/bg/19.jpeg', '/bg/20.jpeg', '/bg/24.jpeg', '/bg/26.jpeg', '/bg/27.jpeg', '/bg/29.jpeg', '/bg/30.jpeg'];
+  const images = ['/bg/25.jpeg', '/bg/8.jpeg', '/bg/12.jpeg', '/bg/10.jpeg'];
+  const images2 = ['/bg/13.jpeg', '/bg/22.jpeg', '/bg/7.jpeg'];
+  const images3 = ['/bg/14.jpeg', '/bg/15.jpeg', '/bg/16.jpeg', '/bg/18.jpeg', '/bg/19.jpeg', '/bg/20.jpeg', '/bg/24.jpeg', '/bg/26.jpeg', '/bg/27.jpeg', '/bg/29.jpeg', '/bg/30.jpeg'];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
