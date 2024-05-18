@@ -44,17 +44,7 @@ const Gift: React.FC = () => {
                           <span className="hidden sm:block ml-2">Salin</span>
                         </Button>
                       </div>
-                      <p className="text-sm text-gray-600">A.N Cici Febrianti</p>
-                    </div>
-                    <div className="bg-gray-100 p-4 rounded-lg shadow-inner w-full text-center">
-                      <div className="flex items-center justify-center">
-                        <p className="font-medium text-lg">1234567890</p>
-                        <Button className="ml-2" variant="outline" size="sm" onClick={() => onCopy('1234567890')}>
-                          <Copy className="h-4 w-4 text-black" />
-                          <span className="hidden sm:block ml-2">Salin</span>
-                        </Button>
-                      </div>
-                      <p className="text-sm text-gray-600">A.N John Doe</p>
+                      <p className="text-sm text-gray-600">BCA A.N Cici Febrianti</p>
                     </div>
                   </div>
                 </DialogDescription>

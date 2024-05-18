@@ -39,7 +39,7 @@ const Gallery = () => {
             <span className="text-3xl font-black">Bahagia Kami</span>
           </h1>
           <div className="w-full max-w-md mb-8">
-            <Image src="/bg/6.png" alt="Main" width={400} height={800} className="rounded-lg object-cover px-4" />
+            <Image src="/bg/22.jpeg" alt="Main" width={400} height={800} className="rounded-lg object-cover px-4" />
           </div>
         </motion.div>
         <motion.div className="grid grid-cols-4 gap-4 mb-4 px-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ staggerChildren: 0.1 }}>
