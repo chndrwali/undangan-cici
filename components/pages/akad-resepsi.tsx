@@ -44,7 +44,7 @@ const AkadResepsi = () => {
           className="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center flex flex-col items-center"
         >
           <div className="w-full border border-gray-200 shadow-lg rounded-lg overflow-hidden">
-            <Image src="/bg/12.jpeg" alt="Akad" width={300} height={300} className="rounded-lg p-3 object-cover w-full h-[10rem]" />
+            <Image src="/bg/26.jpeg" alt="Akad" width={300} height={300} className="rounded-lg p-3 object-cover w-full h-[10rem]" />
           </div>
           <h2 className="text-2xl font-bold mb-2">Akad</h2>
           <Separator className="max-w-[5rem]" />
